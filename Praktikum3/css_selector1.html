@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector 1</title>
+    <style>
+        *{
+            color: brown;
+            background-color: bisque;
+        }
+        h2 {
+            color: black;
+        }
+        p.success {
+            color: green;
+        }
+        p.danger {
+            color: blue;
+        }
+        p#danger {
+            color: blueviolet;
+        }
+
+       .font-xs { 
+            color: red;
+            font-size: 24px;
+        }
+        a[href] {
+            color: aqua;
+            font-size: 50px;
+        }
+        h1,h2,h3 {
+            text-transform: uppercase;
+        }
+        span#penting {
+            color: red;
+            font-weight: bold;
+        }
+        p.judul {
+            color: red;
+        }
+        div p {
+            font-size: x-large;
+        }
+        div > p {
+            color: cornflowerblue;
+        }
+        /*div p section {
+            font-size: small;
+        }*/
+        /*.judul {
+            font-weight: bold;
+            font-size: 32px;
+            color: blue;
+        }*/
+    </style>
+</head>
+<body>
+    <h1 class="font-xs">Hello World</h1>
+    <p>this is paragraf</p>
+    <hr>
+    <h2 class="judul">ini adalah judul</h2>
+    <p>this is second paragraf</p>
+    <hr>
+    <h2>ini adalah heading 2</h2>
+    <p>this is second paragraf</p>
+    <hr>
+    <h3>this is heading three</h3>
+    <p id="danger">Login gagal</p>
+    <hr>
+    <h3>this is heading two</h3>
+    <p class="success">Login anada berhasil</p>
+    <hr>
+    <a href="https://surabaya.telkomuniversity.ac.id/s1-informatika/" target="_blank">Link active</a>
+    <hr>
+    <p class="judul">Lorem ipsum, dolor sit amet <span id="penting">Pemrograman Web Informatika</span> consectetur adipisicing elit. Quis architecto eligendi blanditiis quas? Enim veritatis molestiae dicta illum animi nam inventore. Nesciunt doloribus voluptate omnis similique corrupti eos! Ut, debitis.</p>
+    <hr>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum necessitatibus, voluptate aperiam, aut quam tempora, eveniet animi nisi laboriosam porro nemo placeat explicabo quidem rem dolorum laborum. Exercitationem, esse.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt saepe hic laudantium odio quidem! Cumque doloremque ratione harum, deleniti eum sequi labore soluta quasi laudantium iure magnam enim doloribus!</p>
+        <section>
+            <p>Inside Section Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quisquam obcaecati esse? Non culpa ad enim nulla delectus laudantium est repudiandae ea dolor dolorum ipsum, provident ut, aspernatur perspiciatis debitis?</p>
+            <p>Inside Section Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quibusdam suscipit quam odit, non in veniam asperiores odio consectetur nostrum doloribus officiis laudantium sapiente commodi aliquam omnis ad quasi cum.</p>
+        </section>
+    </div>
+</body>
+</html>
